@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>eWallet</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
 </head>
+
 <body>
     <div class="container ewallet">
         <header class="green">
@@ -20,7 +25,7 @@
                 </div>
                 <div class="balance-amount">
                     <p>0</p>
-                </div>           
+                </div>
             </div>
 
             <div class="income-expense">
@@ -43,23 +48,34 @@
             </div>
         </header>
 
+        <!-- add and delete -->
         <div class="add">
-            <form action="" id="ewallet-form">
-                <div class="add_container">
-                    <select name="" id="" class="add_type">
-                        <option value="+" selected>+</option>
-                        <option value="-">-</option>
-                    </select>
 
-                    <input type="text" class="add_descreption" placeholder="Add descreption"/>
-                    <input type="number" class="add_value" placeholder="Value">
-                    <button class="add_btn">
-                        <ion-icon name="checkmark-circle-outline"></ion-icon>
-                    </button>
+            <form action="" id="ewallet-form">
+                <div class="add-container">
+                    <span class="add-type ">
+                        <select name="" id="">
+                            <option value="+">+</option>
+                            <option value="-">-</option>
+                        </select>
+                    </span>
+                    <span>
+                        <input type="text" class="add-description form-height" placeholder="Add description">
+                    </span>
+                    <span>
+                        <input type="text" name="" id="" placeholder="Value" class="form-height">
+                    </span>
+                    <span class="check">
+                        <button class="add-button circle rounded form-height">
+                            <i class="fas fa-check"></i>
+                        </button>
+                    </span>
+
                 </div>
             </form>
         </div>
 
+        <!-- item collection  -->
         <div class="collection">
             <div class="item">
                 <div class="item-descreption-time">
@@ -91,4 +107,5 @@
     </div>
     <script src="index.js"></script>
 </body>
+
 </html>
